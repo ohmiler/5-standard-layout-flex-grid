@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* layout relevant styles */
+        html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+        width: 50%;
+        margin: auto;
+        }
+
+        article {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        }
+        article:nth-child(odd) {
+        text-align: right;
+        }
+        article:nth-child(odd) img {
+        grid-column: 2;
+        }
+        article:nth-child(odd) .content {
+        grid-column: 1;
+        grid-row: 1;
+        }
+        article img {
+        grid-column: 1;
+        }
+        article .content {
+        grid-column: 2;
+        }
+        article .content p {
+        display: inline-block;
+        }
+        /* other styles */
+        article img {
+        width: 100%;
+        }
+        article .content {
+        padding: 50px;
+        box-sizing: border-box;
+        }
+        article h1 {
+        font-size: 1.5rem;
+        }
+        article p {
+        font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <img src="https://images.unsplash.com/photo-1532289608746-8aaaa40620f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Mobile phone near a laptop" />
+            <div class="content">
+              <h1>Title #1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non doloribus suscipit deserunt sequi, ad ea doloremque ut necessitatibus aut, laboriosam soluta velit officiis commodi voluptas, aspernatur animi quaerat beatae!</p>
+            </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1579412690850-bd41cd0af397?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Curved computer display on a table" />
+          <div class="content">
+            <h1>Title #2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, corrupti veritatis natus dolor modi quam illum accusamus a nemo, qui velit esse! Quo dignissimos et, blanditiis laudantium amet obcaecati voluptatum.</p>
+          </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Mobile phone with black screen" />
+          <div class="content">
+            <h1>Title #3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste ipsa fugiat libero omnis voluptatum modi minima voluptatibus commodi tenetur!</p>
+          </div>
+        </article>
+    </main>
+</body>
+</html>
